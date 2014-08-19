@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BF0929A199B3BAA008A61FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF09299199B3BAA008A61FF /* Foundation.framework */; };
+		3BF0929C199B3BAA008A61FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF0929B199B3BAA008A61FF /* CoreGraphics.framework */; };
+		3BF0929E199B3BAA008A61FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF0929D199B3BAA008A61FF /* UIKit.framework */; };
+		3BF092A4199B3BAA008A61FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BF092A2199B3BAA008A61FF /* InfoPlist.strings */; };
+		3BF092A6199B3BAA008A61FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF092A5199B3BAA008A61FF /* main.m */; };
+		3BF092AA199B3BAA008A61FF /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF092A9199B3BAA008A61FF /* SYAppDelegate.m */; };
+		3BF092AD199B3BAA008A61FF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF092AB199B3BAA008A61FF /* Main_iPhone.storyboard */; };
+		3BF092B0199B3BAA008A61FF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF092AE199B3BAA008A61FF /* Main_iPad.storyboard */; };
+		3BF092B3199B3BAA008A61FF /* SYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF092B2199B3BAA008A61FF /* SYViewController.m */; };
+		3BF092B5199B3BAA008A61FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF092B4199B3BAA008A61FF /* Images.xcassets */; };
+		3BF092BC199B3BAA008A61FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF092BB199B3BAA008A61FF /* XCTest.framework */; };
+		3BF092BD199B3BAA008A61FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF09299199B3BAA008A61FF /* Foundation.framework */; };
+		3BF092BE199B3BAA008A61FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF0929D199B3BAA008A61FF /* UIKit.framework */; };
+		3BF092C6199B3BAA008A61FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BF092C4199B3BAA008A61FF /* InfoPlist.strings */; };
+		3BF092C8199B3BAA008A61FF /* ShapelyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF092C7199B3BAA008A61FF /* ShapelyTests.m */; };
+		3BF092D3199B3BEA008A61FF /* SYShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF092D2199B3BEA008A61FF /* SYShapeView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BF092BF199B3BAA008A61FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF0928E199B3BAA008A61FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BF09295199B3BAA008A61FF;
+			remoteInfo = Shapely;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BF09296199B3BAA008A61FF /* Shapely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapely.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF09299199B3BAA008A61FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BF0929B199B3BAA008A61FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3BF0929D199B3BAA008A61FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BF092A1199B3BAA008A61FF /* Shapely-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shapely-Info.plist"; sourceTree = "<group>"; };
+		3BF092A3199B3BAA008A61FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BF092A5199B3BAA008A61FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BF092A7199B3BAA008A61FF /* Shapely-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shapely-Prefix.pch"; sourceTree = "<group>"; };
+		3BF092A8199B3BAA008A61FF /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
+		3BF092A9199B3BAA008A61FF /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
+		3BF092AC199B3BAA008A61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3BF092AF199B3BAA008A61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3BF092B1199B3BAA008A61FF /* SYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYViewController.h; sourceTree = "<group>"; };
+		3BF092B2199B3BAA008A61FF /* SYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYViewController.m; sourceTree = "<group>"; };
+		3BF092B4199B3BAA008A61FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BF092BA199B3BAA008A61FF /* ShapelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF092BB199B3BAA008A61FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3BF092C3199B3BAA008A61FF /* ShapelyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShapelyTests-Info.plist"; sourceTree = "<group>"; };
+		3BF092C5199B3BAA008A61FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BF092C7199B3BAA008A61FF /* ShapelyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapelyTests.m; sourceTree = "<group>"; };
+		3BF092D1199B3BEA008A61FF /* SYShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYShapeView.h; sourceTree = "<group>"; };
+		3BF092D2199B3BEA008A61FF /* SYShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYShapeView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BF09293199B3BAA008A61FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF0929C199B3BAA008A61FF /* CoreGraphics.framework in Frameworks */,
+				3BF0929E199B3BAA008A61FF /* UIKit.framework in Frameworks */,
+				3BF0929A199B3BAA008A61FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF092B7199B3BAA008A61FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF092BC199B3BAA008A61FF /* XCTest.framework in Frameworks */,
+				3BF092BE199B3BAA008A61FF /* UIKit.framework in Frameworks */,
+				3BF092BD199B3BAA008A61FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BF0928D199B3BAA008A61FF = {
+			isa = PBXGroup;
+			children = (
+				3BF0929F199B3BAA008A61FF /* Shapely */,
+				3BF092C1199B3BAA008A61FF /* ShapelyTests */,
+				3BF09298199B3BAA008A61FF /* Frameworks */,
+				3BF09297199B3BAA008A61FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BF09297199B3BAA008A61FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BF09296199B3BAA008A61FF /* Shapely.app */,
+				3BF092BA199B3BAA008A61FF /* ShapelyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BF09298199B3BAA008A61FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BF09299199B3BAA008A61FF /* Foundation.framework */,
+				3BF0929B199B3BAA008A61FF /* CoreGraphics.framework */,
+				3BF0929D199B3BAA008A61FF /* UIKit.framework */,
+				3BF092BB199B3BAA008A61FF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BF0929F199B3BAA008A61FF /* Shapely */ = {
+			isa = PBXGroup;
+			children = (
+				3BF092A8199B3BAA008A61FF /* SYAppDelegate.h */,
+				3BF092A9199B3BAA008A61FF /* SYAppDelegate.m */,
+				3BF092AB199B3BAA008A61FF /* Main_iPhone.storyboard */,
+				3BF092AE199B3BAA008A61FF /* Main_iPad.storyboard */,
+				3BF092B1199B3BAA008A61FF /* SYViewController.h */,
+				3BF092B2199B3BAA008A61FF /* SYViewController.m */,
+				3BF092B4199B3BAA008A61FF /* Images.xcassets */,
+				3BF092A0199B3BAA008A61FF /* Supporting Files */,
+				3BF092D1199B3BEA008A61FF /* SYShapeView.h */,
+				3BF092D2199B3BEA008A61FF /* SYShapeView.m */,
+			);
+			path = Shapely;
+			sourceTree = "<group>";
+		};
+		3BF092A0199B3BAA008A61FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BF092A1199B3BAA008A61FF /* Shapely-Info.plist */,
+				3BF092A2199B3BAA008A61FF /* InfoPlist.strings */,
+				3BF092A5199B3BAA008A61FF /* main.m */,
+				3BF092A7199B3BAA008A61FF /* Shapely-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BF092C1199B3BAA008A61FF /* ShapelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BF092C7199B3BAA008A61FF /* ShapelyTests.m */,
+				3BF092C2199B3BAA008A61FF /* Supporting Files */,
+			);
+			path = ShapelyTests;
+			sourceTree = "<group>";
+		};
+		3BF092C2199B3BAA008A61FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BF092C3199B3BAA008A61FF /* ShapelyTests-Info.plist */,
+				3BF092C4199B3BAA008A61FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BF09295199B3BAA008A61FF /* Shapely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF092CB199B3BAA008A61FF /* Build configuration list for PBXNativeTarget "Shapely" */;
+			buildPhases = (
+				3BF09292199B3BAA008A61FF /* Sources */,
+				3BF09293199B3BAA008A61FF /* Frameworks */,
+				3BF09294199B3BAA008A61FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shapely;
+			productName = Shapely;
+			productReference = 3BF09296199B3BAA008A61FF /* Shapely.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BF092B9199B3BAA008A61FF /* ShapelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF092CE199B3BAA008A61FF /* Build configuration list for PBXNativeTarget "ShapelyTests" */;
+			buildPhases = (
+				3BF092B6199B3BAA008A61FF /* Sources */,
+				3BF092B7199B3BAA008A61FF /* Frameworks */,
+				3BF092B8199B3BAA008A61FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BF092C0199B3BAA008A61FF /* PBXTargetDependency */,
+			);
+			name = ShapelyTests;
+			productName = ShapelyTests;
+			productReference = 3BF092BA199B3BAA008A61FF /* ShapelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BF0928E199B3BAA008A61FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bluepego Consulting";
+				TargetAttributes = {
+					3BF092B9199B3BAA008A61FF = {
+						TestTargetID = 3BF09295199B3BAA008A61FF;
+					};
+				};
+			};
+			buildConfigurationList = 3BF09291199B3BAA008A61FF /* Build configuration list for PBXProject "Shapely" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BF0928D199B3BAA008A61FF;
+			productRefGroup = 3BF09297199B3BAA008A61FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BF09295199B3BAA008A61FF /* Shapely */,
+				3BF092B9199B3BAA008A61FF /* ShapelyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BF09294199B3BAA008A61FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF092B0199B3BAA008A61FF /* Main_iPad.storyboard in Resources */,
+				3BF092B5199B3BAA008A61FF /* Images.xcassets in Resources */,
+				3BF092AD199B3BAA008A61FF /* Main_iPhone.storyboard in Resources */,
+				3BF092A4199B3BAA008A61FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF092B8199B3BAA008A61FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF092C6199B3BAA008A61FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BF09292199B3BAA008A61FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF092D3199B3BEA008A61FF /* SYShapeView.m in Sources */,
+				3BF092B3199B3BAA008A61FF /* SYViewController.m in Sources */,
+				3BF092AA199B3BAA008A61FF /* SYAppDelegate.m in Sources */,
+				3BF092A6199B3BAA008A61FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF092B6199B3BAA008A61FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF092C8199B3BAA008A61FF /* ShapelyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BF092C0199B3BAA008A61FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BF09295199B3BAA008A61FF /* Shapely */;
+			targetProxy = 3BF092BF199B3BAA008A61FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BF092A2199B3BAA008A61FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF092A3199B3BAA008A61FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3BF092AB199B3BAA008A61FF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF092AC199B3BAA008A61FF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3BF092AE199B3BAA008A61FF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF092AF199B3BAA008A61FF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3BF092C4199B3BAA008A61FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF092C5199B3BAA008A61FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BF092C9199B3BAA008A61FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BF092CA199B3BAA008A61FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BF092CC199B3BAA008A61FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shapely/Shapely-Prefix.pch";
+				INFOPLIST_FILE = "Shapely/Shapely-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3BF092CD199B3BAA008A61FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shapely/Shapely-Prefix.pch";
+				INFOPLIST_FILE = "Shapely/Shapely-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3BF092CF199B3BAA008A61FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shapely.app/Shapely";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shapely/Shapely-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShapelyTests/ShapelyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3BF092D0199B3BAA008A61FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shapely.app/Shapely";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shapely/Shapely-Prefix.pch";
+				INFOPLIST_FILE = "ShapelyTests/ShapelyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BF09291199B3BAA008A61FF /* Build configuration list for PBXProject "Shapely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF092C9199B3BAA008A61FF /* Debug */,
+				3BF092CA199B3BAA008A61FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF092CB199B3BAA008A61FF /* Build configuration list for PBXNativeTarget "Shapely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF092CC199B3BAA008A61FF /* Debug */,
+				3BF092CD199B3BAA008A61FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BF092CE199B3BAA008A61FF /* Build configuration list for PBXNativeTarget "ShapelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF092CF199B3BAA008A61FF /* Debug */,
+				3BF092D0199B3BAA008A61FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BF0928E199B3BAA008A61FF /* Project object */;
+}
