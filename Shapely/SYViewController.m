@@ -22,9 +22,30 @@
 
 - (IBAction)moveShape:(UIPanGestureRecognizer *)gesture;
 - (IBAction)resizeShape:(UIPinchGestureRecognizer *)gesture;
+- (IBAction)changeColor:(UITapGestureRecognizer *)gesture;
+- (IBAction)sendShapeToBack:(UITapGestureRecognizer *)gesture;
 @end
 
 @implementation SYViewController
+
+- (IBAction)changeColor:(UITapGestureRecognizer *)gesture
+{
+    SYShapeView *shapeView = (SYShapeView *)gesture.view;
+    UIColor *color = shapeView.color;
+    NSUInteger colorIndex = [self.colors indexOfObject:color];
+    NSUInteger newIndex;
+    do {
+        newIndex = arc4random_uniform(self.colors.count);
+    } while (colorIndex == newIndex);
+    shapeView.color = [self.colors objectAtIndex:newIndex];
+}
+
+- (IBAction)sendShapeToBack:(UITapGestureRecognizer *)gesture
+{
+    UIView *shapeView = gesture.view;
+    [self.view sendSubviewToBack:shapeView];
+}
+
 
 - (IBAction)moveShape:(UIPanGestureRecognizer *)gesture
 {
@@ -129,16 +150,20 @@
 //    NSLog(@"addShape");
     NSLog(@"%@ whatever", NSStringFromSelector(_cmd));
     
+    // deleting the last created object
 //    if (lastView != nil) {
 //        [lastView removeFromSuperview];
 //        lastView = nil;
 //    }
     
+	// Create a new shape, with a new color, and add it to the view
     SYShapeView *shapeView = [[SYShapeView alloc]
                                 initWithShape:[sender tag]
                               withStrokeWidth:[[self.strokeWidths objectAtIndex:[sender tag]] floatValue]];
     
+	// Assign the shape a random color
     shapeView.color = [self.colors objectAtIndex:arc4random_uniform(self.colors.count)];
+    
     [self.view addSubview:shapeView];
     lastView = shapeView;
     
@@ -162,6 +187,21 @@
     UIPinchGestureRecognizer *pinchGesture;
     pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(resizeShape:)];
     [shapeView addGestureRecognizer:pinchGesture];
+    
+    // adding double tap
+    UITapGestureRecognizer *doubleTapGesture;
+    doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeColor:)];
+    doubleTapGesture.numberOfTapsRequired = 2;
+    [shapeView addGestureRecognizer:doubleTapGesture];
+    
+    // adding triple tap
+    UITapGestureRecognizer *tripleTapGesture;
+    tripleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sendShapeToBack:)];
+    tripleTapGesture.numberOfTapsRequired = 3;
+    [shapeView addGestureRecognizer:tripleTapGesture];
+    
+    // resolves why double tap may not work
+    [doubleTapGesture requireGestureRecognizerToFail:tripleTapGesture];
     
     // adding animation
     shapeFrame = shapeView.frame;

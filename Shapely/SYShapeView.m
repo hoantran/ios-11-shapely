@@ -50,8 +50,16 @@ const float kSYShapeViewHeightScale = 3.0f;
 {
 //    NSLog(@"drawRect");
     UIBezierPath *path = self.path;
+    [[[UIColor blackColor] colorWithAlphaComponent:0.3] setFill];
+    [path fill];
     [self.color setStroke];
     [path stroke];
+}
+
+- (void)setColor:(UIColor *)color
+{
+    _color = color;
+    [self setNeedsDisplay];
 }
 
 

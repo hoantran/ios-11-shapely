@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shapely/SYShapeView.m"
-            timestampString = "429760397.037332"
+            timestampString = "430122000.286841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "-initWithShape:withStrokeWidth:"
             landmarkType = "5">
          </BreakpointContent>
